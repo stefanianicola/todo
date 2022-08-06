@@ -1,0 +1,13 @@
+Spent time report
+
+2  hours to create project, set up jest, create a basic structure.
+2 hours to create a basic layout, implement lazy load.
+6 hours implement ngrx, resolving troubles of work and researching about it
+2 hour to create unit testing cases with jest.
+
+
+With more time I would have done:
+Mock with data.json to consume from effects and give to app.
+Improve unit testing cases.
+Improve the ui with another design.
+Research more about entities in NgRx.
