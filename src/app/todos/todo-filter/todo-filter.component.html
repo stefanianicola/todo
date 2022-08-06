@@ -1,24 +1,14 @@
 <section class="d-flex flex-row">
   <div class="search-task input-group mb-3">
-    <input type="search" class="form-control" placeholder="Search by task name" aria-label="Search by task name"
-      aria-describedby="basic-addon1">
+    <input type="text" class="form-control" placeholder="Search by task name" value={{searched}}
+      aria-label="Search by task name" aria-describedby="basic-addon1" (keyup)="search($event)">
   </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="toBeDone">
-    <label class="form-check-label" for="toBeDone">
-      To be done
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="completed">
-    <label class="form-check-label" for="completed">
-      Completed
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" id="viewAll">
-    <label class="form-check-label" for="viewAll">
-      View All
+
+  <div class="form-check" *ngFor="let filter of filters">
+    <input class="form-check-input" type="radio" value={{filter}} [checked]="filter === actualFilter"
+      name="flexRadioDefault" id="filter" (click)="setFilter(filter)">
+    <label class="form-check-label" for="filter">
+      {{filter | titlecase}}
     </label>
   </div>
 </section>

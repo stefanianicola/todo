@@ -1,8 +1,18 @@
-<li class="list-group-item  d-flex justify-content-between">
-  <span class="align-middle">ITEM</span>
-  <div role="group" aria-label="First group">
-    <button type="button" class="btn btn-success">0</button>
-    <button type="button" class="btn btn-primary">1</button>
-    <button type="button" class="btn btn-danger">2</button>
+<li>
+  <div class="input-group mb-3" [ngClass]="{'complete': todo.completed === true}">
+    <div class="input-group-text">
+      <input class="form-check-input mt-0" type="checkbox" aria-label="Checkbox" [formControl]="checkCompleted">
+    </div>
+    <input type="text" id={{todo.id}} class="form-control" [formControl]="textInput" aria-label="textInput" readonly>
+
+    <div role="group" aria-label="First group" *ngIf="todo.completed">
+      <button type="button" class="btn btn-primary" (click)="backToDo()">
+        <i class="fa fa-undo" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="btn btn-danger" (click)="deleteToDo()">
+        <i class="fa fa-trash" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
+
 </li>
