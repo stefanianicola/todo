@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Setup
 
-Install Angular to run project
+Install Angular to run project, inf you run with `ng` commands
 `npm install -g @angular/cli`
 
 Install dependencies
@@ -12,7 +12,7 @@ Install dependencies
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` or `npm run start`for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Build
 
