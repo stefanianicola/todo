@@ -5,10 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Setup
 
 Install Angular to run project
-npm install -g @angular/cli
+`npm install -g @angular/cli`
 
 Install dependencies
-npm install
+`npm install`
 
 ## Development server
 
