@@ -12,6 +12,8 @@ export const initialState: TodoState = {
   todos: [
     new Todo('Create project'),
     new Todo('Think about the idea'),
+    new Todo('Push code'),
+    new Todo('Detail readme'),
   ],
   filter: 'view all',
   searched: ''

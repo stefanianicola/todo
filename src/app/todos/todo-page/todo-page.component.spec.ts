@@ -1,25 +1,14 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TodoPageComponent } from './todo-page.component';
 
-describe('TodoPageComponent', () => {
-  let component: TodoPageComponent;
-  let fixture: ComponentFixture<TodoPageComponent>;
+let component: TodoPageComponent;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ TodoPageComponent ]
-    })
-    .compileComponents();
-  });
-
+describe('AppComponent', () => {
   beforeEach(() => {
-    fixture = TestBed.createComponent(TodoPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new TodoPageComponent();
   });
 
-  it('should create', () => {
+  it('should be create', () => {
     expect(component).toBeTruthy();
-  });
+  })
+
 });
